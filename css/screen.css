@@ -1,10 +1,11 @@
-@import url("//db.onlinewebfonts.com/c/56dc3231ae1aea219fb668c8be11f27a?family=Honey+Cute");
-@import url("//db.onlinewebfonts.com/c/f7dc8224ce295c53314806ff8cdf949d?family=KeepCalmW01-Book");
-@import url("//db.onlinewebfonts.com/c/175084d548ad0962a7e2169a21a39693?family=Sansation");
-@import url("//db.onlinewebfonts.com/c/766d402cabd75fbd06104588edb505d3?family=LEMON+MILK+Medium");
-@import url("//db.onlinewebfonts.com/c/e8eeabdb432fa315c990a55cb5f56d57?family=LEMON+MILK");
-@import url("//db.onlinewebfonts.com/c/ef5c0a066154464f7e8a73e0b86a98e5?family=LEMON+MILK+Light");
-@import url("//db.onlinewebfonts.com/c/dcbedadff6f97bfa4d87d02fe416409f?family=LEMON+MILK+Bold");
+@import url("http://fonts.cdnfonts.com/css/lemonmilk");
+@import url("https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap");
+@import url("http://fonts.cdnfonts.com/css/keep-calm");
+@import url("http://fonts.cdnfonts.com/css/sansation");
+h2 {
+  font-family: "Caveat Brush", cursive;
+}
+
 .o-main {
   border: 5px solid greenyellow;
 }
@@ -16,6 +17,7 @@
 .c-nav__brand {
   width: 60%;
   height: 60%;
+  fill: #424242;
 }
 
 .c-nav__link {
