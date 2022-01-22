@@ -4,6 +4,7 @@
 @import url("http://fonts.cdnfonts.com/css/sansation");
 h2 {
   font-family: "Caveat Brush", cursive;
+  font-size: 36px;
 }
 
 .o-main {
@@ -81,7 +82,7 @@ h2 {
 }
 
 .c-header__slide2bg {
-  background-color: #9CCBBF;
+  background-color: #9ccbbf;
   border-radius: 1.5625rem;
   padding: 3rem 0;
 }
@@ -90,6 +91,12 @@ h2 {
   background-color: #f8b88b;
   border-radius: 1.5625rem;
   padding: 3rem 0;
+}
+
+.c-subtitle {
+  font-family: "Caveat Brush", cursive;
+  font-size: 36px;
+  padding: 3rem  0;
 }
 
 .u-hotpink {
