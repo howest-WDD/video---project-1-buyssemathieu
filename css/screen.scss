@@ -4,18 +4,21 @@
 @import url("//db.onlinewebfonts.com/c/56dc3231ae1aea219fb668c8be11f27a?family=Honey+Cute");
 @import url("//db.onlinewebfonts.com/c/f7dc8224ce295c53314806ff8cdf949d?family=KeepCalmW01-Book");
 @import url("//db.onlinewebfonts.com/c/175084d548ad0962a7e2169a21a39693?family=Sansation");
-@import url("//db.onlinewebfonts.com/c/766d402cabd75fbd06104588edb505d3?family=LEMON+MILK+Medium");
-@import url("//db.onlinewebfonts.com/c/e8eeabdb432fa315c990a55cb5f56d57?family=LEMON+MILK");
-@import url("//db.onlinewebfonts.com/c/ef5c0a066154464f7e8a73e0b86a98e5?family=LEMON+MILK+Light");
-@import url("//db.onlinewebfonts.com/c/dcbedadff6f97bfa4d87d02fe416409f?family=LEMON+MILK+Bold");
+@import url('http://fonts.cdnfonts.com/css/lemonmilk');
+@import url("https://fonts.googleapis.com/css2?family=Kalam&family=Poppins:wght@400;700&display=swap");
 
-$paleyellow: #ffef93;
-$darkgrey: #424242;
-$lightgrey: #e4e4e4;
-$darkgreen: #2c443e;
-$palegreen: #91b9ac;
-$palegreenslide2 : #9CCBBF;
-$paleorange : #f8b88b;
+$colorpaleyellow: #ffef93;
+$colordarkgrey: #424242;
+$colorlightgrey: #e4e4e4;
+$colordarkgreen: #2c443e;
+$colorpalegreen: #91b9ac;
+$colorpalegreenslide2 : #9CCBBF;
+$colorpaleorange : #f8b88b;
+
+
+$font-title: "Kalam", cursive;
+$stupidfont : 'Lemon/Milk', sans-serif;
+$font_headings : "HoneyCute", sans-serif;
 
 //------------------------------------------------------//
 //TOOLS//
@@ -28,6 +31,9 @@ $paleorange : #f8b88b;
 //------------------------------------------------------//
 //ELEMENTS//
 //------------------------------------------------------//
+h2{
+  font-family: $font-title;
+}
 
 //------------------------------------------------------//
 //OBJECTS//
@@ -39,13 +45,14 @@ $paleorange : #f8b88b;
 //COMPONENTS//
 //------------------------------------------------------//
 .c-nav {
-  background-color: $darkgrey;
+  background-color: $colordarkgrey;
 
   &__brand {
     width: 60%;
     height: 60%;
+    fill: $colordarkgrey;
   }
-
+  
   &__link {
         margin-right: 1rem;
         @media only screen and (max-width: 768px) {
@@ -56,11 +63,11 @@ $paleorange : #f8b88b;
         text-decoration: none;
 
         &:hover {
-        color: $palegreen;
+        color: $colorpalegreen;
         transition-duration: 0.3s;
         }
     
-        color: $lightgrey;
+        color: $colorlightgrey;
 
 
         &--active {
@@ -70,20 +77,20 @@ $paleorange : #f8b88b;
             }
 
             &:hover {
-                color: $palegreen;
+                color: $colorpalegreen;
             }
 
             padding-bottom: 0.5rem;
-            color: $palegreen;
-            text-decoration: underline $palegreen 3px;
+            color: $colorpalegreen;
+            text-decoration: underline $colorpalegreen 3px;
         }
     }
 }
 .c-header {
   
     &__imgcontainer{
-        display: flex;
-        justify-content: center;
+      display: flex;
+      justify-content: center;
     }
   &__slide1 {
     justify-content: center;
@@ -95,15 +102,22 @@ $paleorange : #f8b88b;
     padding: 3rem 0;
   }
     &__slide2bg{
-        background-color: $palegreenslide2;
+        background-color: $colorpalegreenslide2;
         border-radius: 1.5625rem;
         padding: 3rem 0;
     }
     &__slide3bg{
-        background-color: $paleorange;
+        background-color: $colorpaleorange;
         border-radius: 1.5625rem;
         padding: 3rem 0;
     }
+}
+.c-main{
+  &__videotitle{
+    
+  
+
+  }
 }
 //------------------------------------------------------//
 //BOOTSTRAP//
