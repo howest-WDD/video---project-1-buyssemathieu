@@ -1,0 +1,95 @@
+@import url("//db.onlinewebfonts.com/c/56dc3231ae1aea219fb668c8be11f27a?family=Honey+Cute");
+@import url("//db.onlinewebfonts.com/c/f7dc8224ce295c53314806ff8cdf949d?family=KeepCalmW01-Book");
+@import url("//db.onlinewebfonts.com/c/175084d548ad0962a7e2169a21a39693?family=Sansation");
+@import url("//db.onlinewebfonts.com/c/766d402cabd75fbd06104588edb505d3?family=LEMON+MILK+Medium");
+@import url("//db.onlinewebfonts.com/c/e8eeabdb432fa315c990a55cb5f56d57?family=LEMON+MILK");
+@import url("//db.onlinewebfonts.com/c/ef5c0a066154464f7e8a73e0b86a98e5?family=LEMON+MILK+Light");
+@import url("//db.onlinewebfonts.com/c/dcbedadff6f97bfa4d87d02fe416409f?family=LEMON+MILK+Bold");
+.o-main {
+  border: 5px solid greenyellow;
+}
+
+.c-nav {
+  background-color: #424242;
+}
+
+.c-nav__brand {
+  width: 60%;
+  height: 60%;
+}
+
+.c-nav__link {
+  margin-right: 1rem;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  text-decoration: none;
+  color: #e4e4e4;
+}
+
+@media only screen and (max-width: 768px) {
+  .c-nav__link {
+    text-align: center;
+  }
+}
+
+.c-nav__link:hover {
+  color: #91b9ac;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+}
+
+.c-nav__link--active {
+  margin-right: 1rem;
+  padding-bottom: 0.5rem;
+  color: #91b9ac;
+  -webkit-text-decoration: underline #91b9ac 3px;
+          text-decoration: underline #91b9ac 3px;
+}
+
+@media only screen and (max-width: 768px) {
+  .c-nav__link--active {
+    text-align: center;
+  }
+}
+
+.c-nav__link--active:hover {
+  color: #91b9ac;
+}
+
+.c-header__imgcontainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.c-header__slide1 {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.c-header__slide1bg {
+  background-color: #ffef93;
+  border-radius: 1.5625rem;
+  padding: 3rem 0;
+}
+
+.c-header__slide2bg {
+  background-color: #9CCBBF;
+  border-radius: 1.5625rem;
+  padding: 3rem 0;
+}
+
+.c-header__slide3bg {
+  background-color: #f8b88b;
+  border-radius: 1.5625rem;
+  padding: 3rem 0;
+}
+
+.u-hotpink {
+  background-color: hotpink;
+}

@@ -1,0 +1,117 @@
+//------------------------------------------------------//
+//SETTINGS//
+//------------------------------------------------------//
+@import url("//db.onlinewebfonts.com/c/56dc3231ae1aea219fb668c8be11f27a?family=Honey+Cute");
+@import url("//db.onlinewebfonts.com/c/f7dc8224ce295c53314806ff8cdf949d?family=KeepCalmW01-Book");
+@import url("//db.onlinewebfonts.com/c/175084d548ad0962a7e2169a21a39693?family=Sansation");
+@import url("//db.onlinewebfonts.com/c/766d402cabd75fbd06104588edb505d3?family=LEMON+MILK+Medium");
+@import url("//db.onlinewebfonts.com/c/e8eeabdb432fa315c990a55cb5f56d57?family=LEMON+MILK");
+@import url("//db.onlinewebfonts.com/c/ef5c0a066154464f7e8a73e0b86a98e5?family=LEMON+MILK+Light");
+@import url("//db.onlinewebfonts.com/c/dcbedadff6f97bfa4d87d02fe416409f?family=LEMON+MILK+Bold");
+
+$paleyellow: #ffef93;
+$darkgrey: #424242;
+$lightgrey: #e4e4e4;
+$darkgreen: #2c443e;
+$palegreen: #91b9ac;
+$palegreenslide2 : #9CCBBF;
+$paleorange : #f8b88b;
+
+//------------------------------------------------------//
+//TOOLS//
+//------------------------------------------------------//
+
+//------------------------------------------------------//
+//GENERIC//
+//------------------------------------------------------//
+
+//------------------------------------------------------//
+//ELEMENTS//
+//------------------------------------------------------//
+
+//------------------------------------------------------//
+//OBJECTS//
+//------------------------------------------------------//
+.o-main {
+  border: 5px solid greenyellow;
+}
+//------------------------------------------------------//
+//COMPONENTS//
+//------------------------------------------------------//
+.c-nav {
+  background-color: $darkgrey;
+
+  &__brand {
+    width: 60%;
+    height: 60%;
+  }
+
+  &__link {
+        margin-right: 1rem;
+        @media only screen and (max-width: 768px) {
+        text-align: center;
+        }
+
+        align-items: flex-end;
+        text-decoration: none;
+
+        &:hover {
+        color: $palegreen;
+        transition-duration: 0.3s;
+        }
+    
+        color: $lightgrey;
+
+
+        &--active {
+            margin-right: 1rem;
+            @media only screen and (max-width: 768px) {
+                text-align: center;
+            }
+
+            &:hover {
+                color: $palegreen;
+            }
+
+            padding-bottom: 0.5rem;
+            color: $palegreen;
+            text-decoration: underline $palegreen 3px;
+        }
+    }
+}
+.c-header {
+  
+    &__imgcontainer{
+        display: flex;
+        justify-content: center;
+    }
+  &__slide1 {
+    justify-content: center;
+  }
+
+  &__slide1bg {
+    background-color: $paleyellow;
+    border-radius: 1.5625rem;
+    padding: 3rem 0;
+  }
+    &__slide2bg{
+        background-color: $palegreenslide2;
+        border-radius: 1.5625rem;
+        padding: 3rem 0;
+    }
+    &__slide3bg{
+        background-color: $paleorange;
+        border-radius: 1.5625rem;
+        padding: 3rem 0;
+    }
+}
+//------------------------------------------------------//
+//BOOTSTRAP//
+//------------------------------------------------------//
+
+//------------------------------------------------------//
+//UTILITIES//
+//------------------------------------------------------//
+.u-hotpink {
+  background-color: hotpink;
+}
