@@ -6,6 +6,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap");
 @import url("http://fonts.cdnfonts.com/css/keep-calm");
 @import url("http://fonts.cdnfonts.com/css/sansation");
+@import url("https://use.typekit.net/mpy1uio.css");
 
 $colorpaleyellow: #ffef93;
 $colordarkgrey: #424242;
@@ -20,6 +21,7 @@ $font_title: "Lemon/Milk", sans-serif;
 $font_heading: "Caveat Brush", cursive;
 $font_subheading: "Keep Calm", sans-serif;
 $font_text: "Sansation", sans-serif;
+$font_heading2: 'pauline', sans-serif;
 
 $title_fontsize: 40px;
 $heading_fontsize: 36px;
@@ -45,7 +47,7 @@ h1{
   font-size: $title_fontsize;
 }
 h2 {
-  font-family: $font_heading;
+  font-family: $font_heading2;
   font-size: $heading_fontsize;
 }
 h3{
@@ -176,10 +178,25 @@ p{
     border-radius: 15px;
     display: flex;
     justify-content: center;
+
+    &:hover{
+      background-color: $colordarkgreen;
+      transition-duration: 0.3s;
+    }
   }
   &__buttonimage{
     width: 50%;
     height: 50%;
+  }
+}
+
+.c-nieuwsbrief{
+  &__tekstcontainer{
+    margin-left: auto ;
+    margin-right: auto;
+  }
+  &__tekst{
+    text-align: center;
   }
 }
 //------------------------------------------------------//

@@ -2,13 +2,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap");
 @import url("http://fonts.cdnfonts.com/css/keep-calm");
 @import url("http://fonts.cdnfonts.com/css/sansation");
+@import url("https://use.typekit.net/mpy1uio.css");
 h1 {
   font-family: "Lemon/Milk", sans-serif;
   font-size: 40px;
 }
 
 h2 {
-  font-family: "Caveat Brush", cursive;
+  font-family: "pauline", sans-serif;
   font-size: 36px;
 }
 
@@ -150,9 +151,24 @@ p {
           justify-content: center;
 }
 
+.c-onzeaanbiedingen__button:hover {
+  background-color: #2c443e;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+}
+
 .c-onzeaanbiedingen__buttonimage {
   width: 50%;
   height: 50%;
+}
+
+.c-nieuwsbrief__tekstcontainer {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.c-nieuwsbrief__tekst {
+  text-align: center;
 }
 
 .u-hotpink {
