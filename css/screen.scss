@@ -165,17 +165,29 @@ p{
     font-size: $smalltext_fontsize;
   }
   &__prijzen{
+    margin-left: 2.7rem;
+    font-weight: 600;
     
-    &--2{
-      text-align: right;
-    }
     
+  }
+  &__button{
+    background-color: $colorpalegreenslide2;
+    padding: 0.2rem 3rem;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+  }
+  &__buttonimage{
+    width: 50%;
+    height: 50%;
   }
 }
 //------------------------------------------------------//
 //BOOTSTRAP//
 //------------------------------------------------------//
-
+.card:focus{
+  
+}
 //------------------------------------------------------//
 //UTILITIES//
 //------------------------------------------------------//

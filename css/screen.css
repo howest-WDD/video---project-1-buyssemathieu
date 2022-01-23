@@ -133,8 +133,26 @@ p {
   font-size: 10px;
 }
 
-.c-onzeaanbiedingen__prijzen--2 {
-  text-align: right;
+.c-onzeaanbiedingen__prijzen {
+  margin-left: 2.7rem;
+  font-weight: 600;
+}
+
+.c-onzeaanbiedingen__button {
+  background-color: #9ccbbf;
+  padding: 0.2rem 3rem;
+  border-radius: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.c-onzeaanbiedingen__buttonimage {
+  width: 50%;
+  height: 50%;
 }
 
 .u-hotpink {
