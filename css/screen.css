@@ -2,9 +2,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap");
 @import url("http://fonts.cdnfonts.com/css/keep-calm");
 @import url("http://fonts.cdnfonts.com/css/sansation");
+h1 {
+  font-family: "Lemon/Milk", sans-serif;
+  font-size: 40px;
+}
+
 h2 {
   font-family: "Caveat Brush", cursive;
   font-size: 36px;
+}
+
+p {
+  font-family: "Sansation", sans-serif;
+  font-size: 16px;
 }
 
 .o-main {
@@ -78,7 +88,7 @@ h2 {
 .c-header__slide1bg {
   background-color: #ffef93;
   border-radius: 1.5625rem;
-  padding: 3rem 0;
+  padding: 2rem 0;
 }
 
 .c-header__slide2bg {
@@ -97,6 +107,34 @@ h2 {
   font-family: "Caveat Brush", cursive;
   font-size: 36px;
   padding: 3rem  0;
+}
+
+.c-main__video {
+  border-radius: 25px;
+}
+
+.c-onzeaanbiedingen__merknaam {
+  margin: 0 auto;
+}
+
+.c-onzeaanbiedingen__itemname {
+  font-weight: 600;
+}
+
+.c-onzeaanbiedingen__promotiegetal {
+  background-color: #FFAD90;
+  font-weight: 600;
+  border-radius: .9375rem;
+  padding: 0.3rem;
+  text-align: center;
+}
+
+.c-onzeaanbiedingen__hoeveelheid {
+  font-size: 10px;
+}
+
+.c-onzeaanbiedingen__prijzen--2 {
+  text-align: right;
 }
 
 .u-hotpink {

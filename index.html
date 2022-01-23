@@ -12,7 +12,7 @@
 <title>Website Coming Soon - Combell.com Parkpage</title>
 <style type="text/css">
     body, html{
-        margin: 0; padding: 0; height: 100%; overflow: hidden;
+        margin: 0; padding: 0; height: 100%; overflow: scroll;
     }
     #content{
         position: absolute; left: 0; right: 0; bottom: 0; top: 0; 
@@ -100,14 +100,38 @@
     <main class="c-main">
       <div class="container">
         <div class="row">
-          <video src="./assets/video/placeholdervideo.mp4" width="854" height="480" autoplay  muted class="c-main__video"></video>
+          <video src="./assets/video/placeholdervideo.mp4" width="854" height="480" autoplay controls muted class="c-main__video"></video>
         </div>
       </div>
     </main>
+    <h2 class="c-subtitle text-center">Dagelijkse aanbieding</h2>
     <div class="c-onzeaanbiedingen">
       <div class="container">
         <div class="row">
-          h2.c-subtitle
+          <div class="c-onzeaanbiedingen__cardcontainer col-lg-4 col-md-6 d-flex">
+            <div class="card c-onzeaanbiedingen__products--1 ">
+              <div class="c__onzeaanbiedingen__item ">
+                <a href="#"><img class="C-onzeaanbiedingen__image" src="./assets/img/persinaasappelen.png" width="201" height="344" alt="persinaasappelen"></a>
+              </div>
+              <div class="card-body">
+                <p class="c-onzeaanbiedingen__merknaam"> Delhaize </p>
+                <p class="c-onzeaanbiedingen__itemname">Perssinaasappelen</p>
+                <p class="c-onzeaanbiedingen__promotiegetal">1 + 1 gratis</p>
+                <p class="c-onzeaanbiedingen__hoeveelheid">3kg</p>
+                <p class="c-onzeaanbiedingen__prijsperhoeveelheid ">1,50 kg </p>
+                <p class="c-onzeaanbiedingen__prijzen--2 d-flex">&euro; 4,40</p>
+                <a href="#"><img src="./assets/img/shopping_cart.png" alt=""></a>
+              </div>
+            </div>
+          </div>
+          <div class="c-onzeaanbiedingen__cardcontainer col-lg-4 col-md-6 d-flex">
+            <div class="card c-onzeaanbiedingen__products--2">
+              <div class="c-onzeaanbiedingen__item">
+                <a href="#"><img src="./assets/img/head_and_shoulders_transparent.png" alt="Head and shoulders"></a>
+              </div>
+            </div>
+          </div>
+          
         </div>
       </div>
     </div>

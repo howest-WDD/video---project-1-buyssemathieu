@@ -14,6 +14,7 @@ $colordarkgreen: #2c443e;
 $colorpalegreen: #91b9ac;
 $colorpalegreenslide2: #9ccbbf;
 $colorpaleorange: #f8b88b;
+$colorpalered: #FFAD90;
 
 $font_title: "Lemon/Milk", sans-serif;
 $font_heading: "Caveat Brush", cursive;
@@ -23,7 +24,10 @@ $font_text: "Sansation", sans-serif;
 $title_fontsize: 40px;
 $heading_fontsize: 36px;
 $subheading_fontsize: 32px;
-$text_fontsize: 24px;
+$text_fontsize: 16px;
+$smalltext_fontsize:10px;
+
+$roundedborder: 25px;
 
 //------------------------------------------------------//
 //TOOLS//
@@ -36,11 +40,21 @@ $text_fontsize: 24px;
 //------------------------------------------------------//
 //ELEMENTS//
 //------------------------------------------------------//
+h1{
+  font-family: $font_title;
+  font-size: $title_fontsize;
+}
 h2 {
   font-family: $font_heading;
   font-size: $heading_fontsize;
 }
+h3{
 
+}
+p{
+  font-family: $font_text;
+  font-size: $text_fontsize;
+}
 //------------------------------------------------------//
 //OBJECTS//
 //------------------------------------------------------//
@@ -103,7 +117,7 @@ h2 {
   &__slide1bg {
     background-color: $colorpaleyellow;
     border-radius: 1.5625rem;
-    padding: 3rem 0;
+    padding: 2rem 0;
   }
   &__slide2bg {
     background-color: $colorpalegreenslide2;
@@ -122,7 +136,41 @@ h2 {
   padding: 3rem  0;
 }
 .c-main {
+  &__video{
+    border-radius:$roundedborder ;
+    
+  }
+  
 
+}
+.c-onzeaanbiedingen{
+  &__image{
+
+  }
+  &__merknaam{
+    margin: 0 auto;
+  }
+  &__itemname{
+    
+    font-weight: 600;
+  }
+  &__promotiegetal{
+    background-color: $colorpalered;
+    font-weight: 600;
+    border-radius: .9375rem;
+    padding: 0.3rem ;
+    text-align: center;
+  }
+  &__hoeveelheid{
+    font-size: $smalltext_fontsize;
+  }
+  &__prijzen{
+    
+    &--2{
+      text-align: right;
+    }
+    
+  }
 }
 //------------------------------------------------------//
 //BOOTSTRAP//
