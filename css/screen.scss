@@ -14,8 +14,8 @@ $colorlightgrey: #e4e4e4;
 $colordarkgreen: #2c443e;
 $colorpalegreen: #91b9ac;
 $colorpalegreenslide2: #9ccbbf;
-$colorpaleorange: #f8b88b;
-$colorpalered: #ffad90;
+$colorpaleorange: #ffd0ae;
+$colorpalered: #ffc4af;
 $colordarkpurple: #90526d;
 $colorpalepurple: #f0bbd2;
 
@@ -52,8 +52,6 @@ h1 {
 h2 {
   font-family: $font_heading2;
   font-size: $heading_fontsize;
-}
-h3 {
 }
 p {
   font-family: $font_text;
@@ -218,18 +216,41 @@ body, html{
     margin-left: 0 auto;
     margin-right: 0 auto;
   }
+  &__tekst{
+    font-family: $font_subheading ;
+  }
   &__inputcontainer{
     text-align: center;
+    display: flex;
+
   }
-  &__textarea{
-    
+
+  &__arrow{
+    padding: 0.3rem;
+    background-color: $colorpaleorange;
   }
+}
+.c-contactus{
+  
 }
 //------------------------------------------------------//
 //BOOTSTRAP//
 //------------------------------------------------------//
-.form-control:focus{
+.form-control{
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
   background-color: $colorpaleorange;
+  display: flex;
+  border: none;
+  
+}
+.form-control:focus{
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-color: $colorpaleorange;
+  box-shadow: none;
+  border-color: transparent;
+
 }
 //------------------------------------------------------//
 //UTILITIES//

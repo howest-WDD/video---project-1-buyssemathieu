@@ -115,7 +115,7 @@ body, html {
 }
 
 .c-header__slide3bg {
-  background-color: #f8b88b;
+  background-color: #ffd0ae;
   border-bottom-left-radius: 1.5625rem;
   border-bottom-right-radius: 1.5625rem;
   padding: 4rem 0;
@@ -140,7 +140,7 @@ body, html {
 }
 
 .c-onzeaanbiedingen__promotiegetal {
-  background-color: #ffad90;
+  background-color: #ffc4af;
   font-weight: 600;
   border-radius: 0.9375rem;
   padding: 0.3rem;
@@ -205,12 +205,39 @@ body, html {
   margin-right: 0 auto;
 }
 
+.c-nieuwsbrief__tekst {
+  font-family: "Keep Calm", sans-serif;
+}
+
 .c-nieuwsbrief__inputcontainer {
   text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c-nieuwsbrief__arrow {
+  padding: 0.3rem;
+  background-color: #ffd0ae;
+}
+
+.form-control {
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  background-color: #ffd0ae;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: none;
 }
 
 .form-control:focus {
-  background-color: #f8b88b;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-color: #ffd0ae;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-color: transparent;
 }
 
 .u-hotpink {
