@@ -238,14 +238,14 @@ body, html {
 
 .form-control:focus {
   border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
+  border-bottom-left-radius: 15px;
   background-color: #ffd0ae;
   -webkit-box-shadow: none;
           box-shadow: none;
   border-color: transparent;
 }
 
-.accardion, .accordion-header {
+.accordeon:active {
   text-align: center;
 }
 
