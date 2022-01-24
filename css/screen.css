@@ -18,6 +18,20 @@ p {
   font-size: 16px;
 }
 
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+#content {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+}
+
 .o-main {
   border: 5px solid greenyellow;
 }
@@ -88,26 +102,29 @@ p {
 
 .c-header__slide1bg {
   background-color: #ffef93;
-  border-radius: 1.5625rem;
-  padding: 2rem 0;
+  border-bottom-left-radius: 1.5625rem;
+  border-bottom-right-radius: 1.5625rem;
+  padding: 3.5rem 0;
 }
 
 .c-header__slide2bg {
   background-color: #9ccbbf;
-  border-radius: 1.5625rem;
-  padding: 3rem 0;
+  border-bottom-left-radius: 1.5625rem;
+  border-bottom-right-radius: 1.5625rem;
+  padding: 5.7rem 0;
 }
 
 .c-header__slide3bg {
   background-color: #f8b88b;
-  border-radius: 1.5625rem;
-  padding: 3rem 0;
+  border-bottom-left-radius: 1.5625rem;
+  border-bottom-right-radius: 1.5625rem;
+  padding: 4rem 0;
 }
 
 .c-subtitle {
   font-family: "Caveat Brush", cursive;
   font-size: 36px;
-  padding: 3rem  0;
+  padding: 3rem 0;
 }
 
 .c-main__video {
@@ -123,9 +140,9 @@ p {
 }
 
 .c-onzeaanbiedingen__promotiegetal {
-  background-color: #FFAD90;
+  background-color: #ffad90;
   font-weight: 600;
-  border-radius: .9375rem;
+  border-radius: 0.9375rem;
   padding: 0.3rem;
   text-align: center;
 }
@@ -162,13 +179,30 @@ p {
   height: 50%;
 }
 
+.c-onzeaanbiedingen__buttoncontainer {
+  padding-top: 2rem;
+}
+
+.c-onzeaanbiedingen__promotiebutton {
+  text-decoration: none;
+  background-color: #f0bbd2;
+  padding: 0.8rem 3rem;
+  color: #90526d;
+  font-family: "Keep Calm", sans-serif;
+  font-size: 24px;
+  border-radius: 15px;
+}
+
+.c-onzeaanbiedingen__promotiebutton:hover {
+  background-color: #90526d;
+  color: #f0bbd2;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+}
+
 .c-nieuwsbrief__tekstcontainer {
   margin-left: 0 auto;
   margin-right: 0 auto;
-}
-
-.c-nieuwsbrief__tekst {
-  text-align: center;
 }
 
 .u-hotpink {

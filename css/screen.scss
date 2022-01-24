@@ -15,19 +15,22 @@ $colordarkgreen: #2c443e;
 $colorpalegreen: #91b9ac;
 $colorpalegreenslide2: #9ccbbf;
 $colorpaleorange: #f8b88b;
-$colorpalered: #FFAD90;
+$colorpalered: #ffad90;
+$colordarkpurple: #90526d;
+$colorpalepurple: #f0bbd2;
 
 $font_title: "Lemon/Milk", sans-serif;
 $font_heading: "Caveat Brush", cursive;
 $font_subheading: "Keep Calm", sans-serif;
 $font_text: "Sansation", sans-serif;
-$font_heading2: 'pauline', sans-serif;
+$font_heading2: "pauline", sans-serif;
 
 $title_fontsize: 40px;
 $heading_fontsize: 36px;
 $subheading_fontsize: 32px;
+$button_fontsize: 24px;
 $text_fontsize: 16px;
-$smalltext_fontsize:10px;
+$smalltext_fontsize: 10px;
 
 $roundedborder: 25px;
 
@@ -42,7 +45,7 @@ $roundedborder: 25px;
 //------------------------------------------------------//
 //ELEMENTS//
 //------------------------------------------------------//
-h1{
+h1 {
   font-family: $font_title;
   font-size: $title_fontsize;
 }
@@ -50,12 +53,23 @@ h2 {
   font-family: $font_heading2;
   font-size: $heading_fontsize;
 }
-h3{
-
+h3 {
 }
-p{
+p {
   font-family: $font_text;
   font-size: $text_fontsize;
+}
+body, html{
+  margin: 0; 
+  padding: 0; 
+  height: 100%;
+}
+#content{
+  position: absolute; 
+  left: 0; 
+  right: 0; 
+  bottom: 0; 
+  top: 0; 
 }
 //------------------------------------------------------//
 //OBJECTS//
@@ -96,11 +110,9 @@ p{
       @media only screen and (max-width: 768px) {
         text-align: center;
       }
-
       &:hover {
         color: $colorpalegreen;
       }
-
       padding-bottom: 0.5rem;
       color: $colorpalegreen;
       text-decoration: underline $colorpalegreen 3px;
@@ -118,93 +130,99 @@ p{
 
   &__slide1bg {
     background-color: $colorpaleyellow;
-    border-radius: 1.5625rem;
-    padding: 2rem 0;
+    border-bottom-left-radius: 1.5625rem;
+    border-bottom-right-radius: 1.5625rem;
+    padding: 3.5rem 0;
   }
   &__slide2bg {
     background-color: $colorpalegreenslide2;
-    border-radius: 1.5625rem;
-    padding: 3rem 0;
+    border-bottom-left-radius: 1.5625rem;
+    border-bottom-right-radius: 1.5625rem;
+    padding: 5.7rem 0;
   }
   &__slide3bg {
     background-color: $colorpaleorange;
-    border-radius: 1.5625rem;
-    padding: 3rem 0;
+    border-bottom-left-radius: 1.5625rem;
+    border-bottom-right-radius: 1.5625rem;
+    padding: 4rem 0;
   }
 }
-.c-subtitle{
+.c-subtitle {
   font-family: $font_heading;
   font-size: $heading_fontsize;
-  padding: 3rem  0;
+  padding: 3rem 0;
 }
 .c-main {
-  &__video{
-    border-radius:$roundedborder ;
-    
+  &__video {
+    border-radius: $roundedborder;
   }
-  
-
 }
-.c-onzeaanbiedingen{
-  &__image{
-
-  }
-  &__merknaam{
+.c-onzeaanbiedingen {
+  &__merknaam {
     margin: 0 auto;
   }
-  &__itemname{
-    
+  &__itemname {
     font-weight: 600;
   }
-  &__promotiegetal{
+  &__promotiegetal {
     background-color: $colorpalered;
     font-weight: 600;
-    border-radius: .9375rem;
-    padding: 0.3rem ;
+    border-radius: 0.9375rem;
+    padding: 0.3rem;
     text-align: center;
   }
-  &__hoeveelheid{
+  &__hoeveelheid {
     font-size: $smalltext_fontsize;
   }
-  &__prijzen{
+  &__prijzen {
     margin-left: 2.7rem;
     font-weight: 600;
-    
-    
   }
-  &__button{
+  &__button {
     background-color: $colorpalegreenslide2;
     padding: 0.2rem 3rem;
     border-radius: 15px;
     display: flex;
     justify-content: center;
 
-    &:hover{
+    &:hover {
       background-color: $colordarkgreen;
       transition-duration: 0.3s;
     }
   }
-  &__buttonimage{
+  &__buttonimage {
     width: 50%;
     height: 50%;
   }
+  &__buttoncontainer {
+    padding-top: 2rem;
+  }
+  &__promotiebutton {
+    text-decoration: none;
+    background-color: $colorpalepurple;
+    padding: 0.8rem 3rem;
+    color: $colordarkpurple;
+    font-family: $font_subheading;
+    font-size: $button_fontsize;
+    border-radius: 15px;
+    &:hover {
+      background-color: $colordarkpurple;
+      color: $colorpalepurple;
+      transition-duration: 0.3s;
+    }
+  }
 }
 
-.c-nieuwsbrief{
-  &__tekstcontainer{
-    margin-left: 0 auto ;
+.c-nieuwsbrief {
+  &__tekstcontainer {
+    margin-left: 0 auto;
     margin-right: 0 auto;
-  }
-  &__tekst{
-    text-align: center;
   }
 }
 //------------------------------------------------------//
 //BOOTSTRAP//
 //------------------------------------------------------//
-.card:focus{
-  
-}
+
 //------------------------------------------------------//
 //UTILITIES//
 //------------------------------------------------------//
