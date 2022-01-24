@@ -33,6 +33,8 @@ $text_fontsize: 16px;
 $smalltext_fontsize: 10px;
 
 $roundedborder: 25px;
+$tab:.9375rem;
+$tab2:1.25rem;
 
 //------------------------------------------------------//
 //TOOLS//
@@ -130,19 +132,19 @@ body, html{
     background-color: $colorpaleyellow;
     border-bottom-left-radius: 1.5625rem;
     border-bottom-right-radius: 1.5625rem;
-    padding: 3.5rem 0;
+
   }
   &__slide2bg {
     background-color: $colorpalegreenslide2;
     border-bottom-left-radius: 1.5625rem;
     border-bottom-right-radius: 1.5625rem;
-    padding: 5.7rem 0;
+
   }
   &__slide3bg {
     background-color: $colorpaleorange;
     border-bottom-left-radius: 1.5625rem;
     border-bottom-right-radius: 1.5625rem;
-    padding: 4rem 0;
+
   }
 }
 .c-subtitle {
@@ -231,7 +233,13 @@ body, html{
   }
 }
 .c-contactus{
-  
+
+}
+.c-tab{
+  margin-left: $tab;
+}
+.c-tab2{
+  margin-left: $tab2;
 }
 //------------------------------------------------------//
 //BOOTSTRAP//
@@ -252,6 +260,10 @@ body, html{
   border-color: transparent;
 
 }
+.accardion, .accordion-header{
+  text-align: center;
+}
+
 //------------------------------------------------------//
 //UTILITIES//
 //------------------------------------------------------//
