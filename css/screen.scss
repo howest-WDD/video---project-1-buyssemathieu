@@ -218,11 +218,19 @@ body, html{
     margin-left: 0 auto;
     margin-right: 0 auto;
   }
+  &__inputcontainer{
+    text-align: center;
+  }
+  &__textarea{
+    
+  }
 }
 //------------------------------------------------------//
 //BOOTSTRAP//
 //------------------------------------------------------//
-
+.form-control:focus{
+  background-color: $colorpaleorange;
+}
 //------------------------------------------------------//
 //UTILITIES//
 //------------------------------------------------------//

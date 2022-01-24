@@ -205,6 +205,14 @@ body, html {
   margin-right: 0 auto;
 }
 
+.c-nieuwsbrief__inputcontainer {
+  text-align: center;
+}
+
+.form-control:focus {
+  background-color: #f8b88b;
+}
+
 .u-hotpink {
   background-color: hotpink;
 }
