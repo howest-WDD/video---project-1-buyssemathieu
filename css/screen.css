@@ -163,8 +163,8 @@ p {
 }
 
 .c-nieuwsbrief__tekstcontainer {
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 0 auto;
+  margin-right: 0 auto;
 }
 
 .c-nieuwsbrief__tekst {
