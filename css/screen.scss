@@ -47,7 +47,9 @@ $tab2:1.25rem;
 //GENERIC//
 //------------------------------------------------------//
 *{
-
+  margin: 0; 
+  padding: 0; 
+  height: 100%;
 }
 //------------------------------------------------------//
 //ELEMENTS//
@@ -64,11 +66,7 @@ p {
   font-family: $font_text;
   font-size: $text_fontsize;
 }
-body, html{
-  margin: 0; 
-  padding: 0; 
-  height: 100%;
-}
+
 
 //------------------------------------------------------//
 //OBJECTS//
@@ -273,7 +271,7 @@ body, html{
 .form-control--2{
   background-color: white;
   border: $colordarkgreen solid 2px; 
-  border-top-right-radius: 15px;
+
 }
 .form-control--2:focus{
   background-color: $colorwhite;
