@@ -303,7 +303,10 @@ body,html{
   background-color: $colorpalepurple;
   
 }
+.accordion-button::after{
+  filter: invert(36%) sepia(12%) saturate(1596%) hue-rotate(282deg) brightness(0%) contrast(87%);
 
+}
 .accordion-button:focus{
   color: $colorpalepurple;
   background-color: $colordarkpurple;
@@ -318,6 +321,11 @@ body,html{
 .accordion-body{
   background-color: $colorverypalepurple;
 }
+.accordion-button:not(.collapsed) {
+  background-color: $colordarkpurple !important;
+  color: black;
+}
+// SVG AANPASSEN ACCORDION
 .btn-primary{
 
   &--2{

@@ -295,6 +295,11 @@ body, html {
   background-color: #f0bbd2;
 }
 
+.accordion-button::after {
+  -webkit-filter: invert(36%) sepia(12%) saturate(1596%) hue-rotate(282deg) brightness(0%) contrast(87%);
+          filter: invert(36%) sepia(12%) saturate(1596%) hue-rotate(282deg) brightness(0%) contrast(87%);
+}
+
 .accordion-button:focus {
   color: #f0bbd2;
   background-color: #90526d;
@@ -309,6 +314,11 @@ body, html {
 
 .accordion-body {
   background-color: #fffafc;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #90526d !important;
+  color: black;
 }
 
 .btn-primary--2 {
