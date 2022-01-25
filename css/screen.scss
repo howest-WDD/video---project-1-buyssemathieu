@@ -257,6 +257,34 @@ body,html{
   }
 
 }
+.c-footer{
+  background-color: $colordarkgrey;
+  padding-top: 1rem;
+  margin-top: 1rem;
+  &__list{
+    justify-content: space-evenly;
+  }
+  &__listitem{
+    list-style-type: none;
+    
+  }
+  &__link{
+    text-decoration: none;
+    color: $colorwhite;
+    
+    &:hover{
+      color: $colorpalegreen;
+    }
+
+    &--active{
+      text-decoration: underline 2px;
+      color: $colorpalegreen;
+
+    }
+  }
+
+
+}
 
 
 
@@ -329,9 +357,10 @@ body,html{
 .btn-primary{
 
   &--2{
+    margin-top: 1.5rem;
     background-color: $colordarkgreen;
     box-shadow: none;
-    border: none;
+    border: $colordarkgreen solid 2px;
     &:hover{
       background-color: transparent;
       border: $colordarkgreen solid 2px;
@@ -340,7 +369,7 @@ body,html{
     &:focus{
       background-color: $colordarkgreen;
       box-shadow: none;
-      border: none;
+      border: $colordarkgreen solid 2px;
       &:hover{
         background-color: transparent;
         border: $colordarkgreen solid 2px;
