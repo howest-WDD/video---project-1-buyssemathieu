@@ -147,6 +147,10 @@ body,html{
   font-family: $font_heading;
   font-size: $heading_fontsize;
   padding: 3rem 0;
+  &--2{
+ 
+    background-color: $colorverypalepurple;
+  }
 }
 .c-main {
   &__video {
@@ -210,6 +214,8 @@ body,html{
 }
 
 .c-nieuwsbrief {
+  background-color: $colorverypalepurple;
+  padding: 2rem;
   &__tekstcontainer {
     margin-left: 0 auto;
     margin-right: 0 auto;
@@ -226,6 +232,11 @@ body,html{
   &__arrow{
     padding: 0.3rem;
     background-color: $colorpaleorange;
+  }
+  &__icon{
+    background-color: $colorpaleorange;
+    margin-right: 2rem;
+    margin-top: 3rem;
   }
 }
 .c-contactus{
@@ -248,12 +259,19 @@ body,html{
   background-color: $colorpalegreen;
   padding: 2rem;
   border-radius: $roundedborder;
+  &__title{
+
+  }
 }
 .c-aboutus{
   &__textcontainer{
     background-color: $colorpaleyellow ;
     padding: 4rem 9rem;
     border-radius: $roundedborder;
+  }
+  &__title{
+    font-family: $font_heading;
+    font-size: $heading_fontsize;
   }
 
 }
@@ -274,6 +292,7 @@ body,html{
     
     &:hover{
       color: $colorpalegreen;
+      transition-duration: 0.3s;
     }
 
     &--active{
@@ -333,7 +352,7 @@ body,html{
 }
 .accordion-button::after{
   filter: invert(36%) sepia(12%) saturate(1596%) hue-rotate(282deg) brightness(0%) contrast(87%);
-
+  color: $colorpalepurple;
 }
 .accordion-button:focus{
   color: $colorpalepurple;

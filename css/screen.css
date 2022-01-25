@@ -116,6 +116,10 @@ body, html {
   padding: 3rem 0;
 }
 
+.c-subtitle--2 {
+  background-color: #fffafc;
+}
+
 .c-main__video {
   border-radius: 25px;
 }
@@ -189,6 +193,11 @@ body, html {
           transition-duration: 0.3s;
 }
 
+.c-nieuwsbrief {
+  background-color: #fffafc;
+  padding: 2rem;
+}
+
 .c-nieuwsbrief__tekstcontainer {
   margin-left: 0 auto;
   margin-right: 0 auto;
@@ -208,6 +217,12 @@ body, html {
 .c-nieuwsbrief__arrow {
   padding: 0.3rem;
   background-color: #ffd0ae;
+}
+
+.c-nieuwsbrief__icon {
+  background-color: #ffd0ae;
+  margin-right: 2rem;
+  margin-top: 3rem;
 }
 
 .c-contactus__sociallink {
@@ -238,6 +253,11 @@ body, html {
   border-radius: 25px;
 }
 
+.c-aboutus__title {
+  font-family: "Caveat Brush", cursive;
+  font-size: 36px;
+}
+
 .c-footer {
   background-color: #424242;
   padding-top: 1rem;
@@ -261,6 +281,8 @@ body, html {
 
 .c-footer__link:hover {
   color: #91b9ac;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
 }
 
 .c-footer__link--active {
@@ -329,6 +351,7 @@ body, html {
 .accordion-button::after {
   -webkit-filter: invert(36%) sepia(12%) saturate(1596%) hue-rotate(282deg) brightness(0%) contrast(87%);
           filter: invert(36%) sepia(12%) saturate(1596%) hue-rotate(282deg) brightness(0%) contrast(87%);
+  color: #f0bbd2;
 }
 
 .accordion-button:focus {
@@ -388,3 +411,4 @@ body, html {
 .u-tab2 {
   margin-left: 1.25rem;
 }
+/*# sourceMappingURL=screen.css.map */
