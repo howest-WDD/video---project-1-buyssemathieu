@@ -18,6 +18,9 @@ $colorpaleorange: #ffd0ae;
 $colorpalered: #ffc4af;
 $colordarkpurple: #90526d;
 $colorpalepurple: #f0bbd2;
+$colorverypalepurple:#fffafc;
+$colorwhite: #ffffff;
+
 
 $font_title: "Lemon/Milk", sans-serif;
 $font_heading: "Caveat Brush", cursive;
@@ -43,7 +46,9 @@ $tab2:1.25rem;
 //------------------------------------------------------//
 //GENERIC//
 //------------------------------------------------------//
+*{
 
+}
 //------------------------------------------------------//
 //ELEMENTS//
 //------------------------------------------------------//
@@ -64,13 +69,7 @@ body, html{
   padding: 0; 
   height: 100%;
 }
-#content{
-  position: absolute; 
-  left: 0; 
-  right: 0; 
-  bottom: 0; 
-  top: 0; 
-}
+
 //------------------------------------------------------//
 //OBJECTS//
 //------------------------------------------------------//
@@ -91,19 +90,17 @@ body, html{
 
   &__link {
     margin-right: 1rem;
+    align-items: flex-end;
+    text-decoration: none;
+    color: $colorlightgrey;
     @media only screen and (max-width: 768px) {
       text-align: center;
     }
 
-    align-items: flex-end;
-    text-decoration: none;
-
     &:hover {
       color: $colorpalegreen;
       transition-duration: 0.3s;
-    }
-
-    color: $colorlightgrey;
+    }   
 
     &--active {
       margin-right: 1rem;
@@ -233,14 +230,27 @@ body, html{
   }
 }
 .c-contactus{
+  &__sociallink{
+    text-decoration: none;
+  }
+  &__sociallistitem{
+    text-decoration: none;
+  }
+  &__sociallink{
+    text-decoration: none;
+    &__sociallistitem{
+      text-decoration: none;
+    }
+  }
+}
 
+.c-form{
+  background-color: $colorpalegreen;
 }
-.c-tab{
-  margin-left: $tab;
-}
-.c-tab2{
-  margin-left: $tab2;
-}
+
+
+
+
 //------------------------------------------------------//
 //BOOTSTRAP//
 //------------------------------------------------------//
@@ -260,13 +270,40 @@ body, html{
   border-color: transparent;
 
 }
-.accordeon:active{
-  text-align: center;
+.form-control--2{
+  background-color: white;
+  border: $colordarkgreen solid 2px; 
+  border-top-right-radius: 15px;
 }
+.form-control--2:focus{
+  background-color: $colorwhite;
 
+  border: $color solid 2px;
+
+}
+.accordion-button{
+  background: $colorpalepurple;
+}
+.accordion-button:focus{
+  color: $colorpalepurple;
+  background-color: $colordarkpurple;
+}
+.accordion-header:active{
+  background-color: $colorpalepurple;
+  color: $colorpalepurple;
+}
+.accordion-body{
+  background-color: $colorverypalepurple;
+}
 //------------------------------------------------------//
 //UTILITIES//
 //------------------------------------------------------//
 .u-hotpink {
   background-color: hotpink;
+}
+.u-tab{
+  margin-left: $tab;
+}
+.u-tab2{
+  margin-left: $tab2;
 }
