@@ -228,6 +228,8 @@ body, html {
 
 .c-form {
   background-color: #91b9ac;
+  padding: 2rem;
+  border-radius: 25px;
 }
 
 .form-control {
@@ -243,7 +245,11 @@ body, html {
 .form-control:focus {
   border-top-left-radius: 15px;
   border-bottom-left-radius: 15px;
-  background-color: #ffd0ae;
+  background-color: #FA9347;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
   -webkit-box-shadow: none;
           box-shadow: none;
   border-color: transparent;
@@ -256,7 +262,6 @@ body, html {
 
 .form-control--2:focus {
   background-color: #ffffff;
-  border: #2c443e solid 2px;
 }
 
 .accordion-button {
@@ -266,6 +271,8 @@ body, html {
 .accordion-button:focus {
   color: #f0bbd2;
   background-color: #90526d;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .accordion-header:active {
@@ -275,6 +282,30 @@ body, html {
 
 .accordion-body {
   background-color: #fffafc;
+}
+
+.btn-primary--2 {
+  background-color: #2c443e;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: none;
+}
+
+.btn-primary--2:hover {
+  background-color: transparent;
+  border: #2c443e solid 2px;
+}
+
+.btn-primary--2:focus {
+  background-color: #2c443e;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: none;
+}
+
+.btn-primary--2:focus:hover {
+  background-color: transparent;
+  border: #2c443e solid 2px;
 }
 
 .u-hotpink {

@@ -20,7 +20,7 @@ $colordarkpurple: #90526d;
 $colorpalepurple: #f0bbd2;
 $colorverypalepurple:#fffafc;
 $colorwhite: #ffffff;
-
+$colororange:#FA9347;
 
 $font_title: "Lemon/Milk", sans-serif;
 $font_heading: "Caveat Brush", cursive;
@@ -46,11 +46,8 @@ $tab2:1.25rem;
 //------------------------------------------------------//
 //GENERIC//
 //------------------------------------------------------//
-*{
-  margin: 0; 
-  padding: 0; 
-  height: 100%;
-}
+
+
 //------------------------------------------------------//
 //ELEMENTS//
 //------------------------------------------------------//
@@ -66,7 +63,11 @@ p {
   font-family: $font_text;
   font-size: $text_fontsize;
 }
-
+body,html{
+  margin: 0; 
+  padding: 0; 
+  height: 100%;
+}
 
 //------------------------------------------------------//
 //OBJECTS//
@@ -244,7 +245,10 @@ p {
 
 .c-form{
   background-color: $colorpalegreen;
+  padding: 2rem;
+  border-radius: $roundedborder;
 }
+
 
 
 
@@ -258,40 +262,66 @@ p {
   background-color: $colorpaleorange;
   display: flex;
   border: none;
+  &:focus{
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    background-color: $colororange;
+    transition-property: background-color;
+    transition-duration: 0.3s;
+    box-shadow: none;
+    border-color: transparent;
+  }
   
-}
-.form-control:focus{
-  border-top-left-radius: 15px;
-  border-bottom-left-radius: 15px;
-  background-color: $colorpaleorange;
-  box-shadow: none;
-  border-color: transparent;
-
 }
 .form-control--2{
   background-color: white;
   border: $colordarkgreen solid 2px; 
 
-}
-.form-control--2:focus{
-  background-color: $colorwhite;
-
-  border: $color solid 2px;
+  &:focus{
+    background-color: $colorwhite;
+  }
 
 }
+
 .accordion-button{
   background: $colorpalepurple;
+  
 }
 .accordion-button:focus{
   color: $colorpalepurple;
   background-color: $colordarkpurple;
+  box-shadow: none;
 }
+
 .accordion-header:active{
   background-color: $colorpalepurple;
   color: $colorpalepurple;
 }
 .accordion-body{
   background-color: $colorverypalepurple;
+}
+.btn-primary{
+
+  &--2{
+    background-color: $colordarkgreen;
+    box-shadow: none;
+    border: none;
+    &:hover{
+      background-color: transparent;
+      border: $colordarkgreen solid 2px;
+    }
+
+    &:focus{
+      background-color: $colordarkgreen;
+      box-shadow: none;
+      border: none;
+      &:hover{
+        background-color: transparent;
+        border: $colordarkgreen solid 2px;
+      }
+    }
+  }
+  
 }
 //------------------------------------------------------//
 //UTILITIES//
