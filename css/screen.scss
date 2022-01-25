@@ -92,6 +92,8 @@ body,html{
     align-items: flex-end;
     text-decoration: none;
     color: $colorlightgrey;
+    font-family: $font_text;
+    font-size: $text_fontsize;
     @media only screen and (max-width: 768px) {
       text-align: center;
     }
@@ -395,7 +397,23 @@ body,html{
       }
     }
   }
+  &--3{
+    background-color: $colorpaleorange;
+    color: $colordarkgrey;
+    box-shadow: none;
+    border: none;
+    margin-left: 0.5rem;
+
+    &:hover{
+      background-color: $colororange;
+      box-shadow: none;
+      border: none;
+    }
+  }
   
+}
+.card{
+  padding: 3rem;
 }
 //------------------------------------------------------//
 //UTILITIES//
