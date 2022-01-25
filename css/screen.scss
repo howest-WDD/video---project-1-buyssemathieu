@@ -229,6 +229,7 @@ body,html{
   }
 }
 .c-contactus{
+
   &__sociallink{
     text-decoration: none;
   }
@@ -248,7 +249,14 @@ body,html{
   padding: 2rem;
   border-radius: $roundedborder;
 }
+.c-aboutus{
+  &__textcontainer{
+    background-color: $colorpaleyellow ;
+    padding: 4rem 9rem;
+    border-radius: $roundedborder;
+  }
 
+}
 
 
 
@@ -282,11 +290,20 @@ body,html{
   }
 
 }
+.form-control--3{
+  background-color: $colorwhite;
+  border: $colordarkgreen solid 2px;
+  &::placeholder{
+    padding-left: 1rem;
+  }
+
+}
 
 .accordion-button{
-  background: $colorpalepurple;
+  background-color: $colorpalepurple;
   
 }
+
 .accordion-button:focus{
   color: $colorpalepurple;
   background-color: $colordarkpurple;
@@ -297,6 +314,7 @@ body,html{
   background-color: $colorpalepurple;
   color: $colorpalepurple;
 }
+
 .accordion-body{
   background-color: $colorverypalepurple;
 }

@@ -232,6 +232,12 @@ body, html {
   border-radius: 25px;
 }
 
+.c-aboutus__textcontainer {
+  background-color: #ffef93;
+  padding: 4rem 9rem;
+  border-radius: 25px;
+}
+
 .form-control {
   border-top-left-radius: 15px;
   border-bottom-left-radius: 15px;
@@ -264,8 +270,29 @@ body, html {
   background-color: #ffffff;
 }
 
+.form-control--3 {
+  background-color: #ffffff;
+  border: #2c443e solid 2px;
+}
+
+.form-control--3::-webkit-input-placeholder {
+  padding-left: 1rem;
+}
+
+.form-control--3:-ms-input-placeholder {
+  padding-left: 1rem;
+}
+
+.form-control--3::-ms-input-placeholder {
+  padding-left: 1rem;
+}
+
+.form-control--3::placeholder {
+  padding-left: 1rem;
+}
+
 .accordion-button {
-  background: #f0bbd2;
+  background-color: #f0bbd2;
 }
 
 .accordion-button:focus {
