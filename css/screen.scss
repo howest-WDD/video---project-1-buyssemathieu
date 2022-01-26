@@ -21,6 +21,8 @@ $colorpalepurple: #f0bbd2;
 $colorverypalepurple:#fffafc;
 $colorwhite: #ffffff;
 $colororange:#FA9347;
+$colorhowestblue:#8edef9;
+$colorvalegreen:#F4FFB9; 
 
 $font_title: "Lemon/Milk", sans-serif;
 $font_heading: "Caveat Brush", cursive;
@@ -234,6 +236,7 @@ body,html{
   margin-top: 2rem;
   background-color: $colorverypalepurple;
   padding: 2rem;
+  border-radius: $roundedborder;
   &__tekstcontainer {
     margin-left: 0 auto;
     margin-right: 0 auto;
@@ -259,6 +262,7 @@ body,html{
 }
 .c-contactus__sociallistitem{
   list-style-type: none;
+  padding-bottom: 1.5rem;
 }
 
 .c-form{
@@ -316,10 +320,22 @@ body,html{
 
     }
   }
-
-
 }
+.c-banner{
+  border: $colorhowestblue solid 5px;
 
+  &__image{
+    width: auto;
+    max-height: 60%;
+  }
+  &__textcontainer{
+    padding-top: 5rem;
+  }
+  &__text{
+    font-family: $font_text;
+    font-size: $text_fontsize;
+  }
+}
 
 
 
@@ -481,4 +497,7 @@ body,html{
 }
 .u-tab2{
   margin-left: $tab2;
+}
+.u-border{
+  border: $colorvalegreen solid 3px;
 }

@@ -207,6 +207,7 @@ body, html {
   margin-top: 2rem;
   background-color: #fffafc;
   padding: 2rem;
+  border-radius: 25px;
 }
 
 .c-nieuwsbrief__tekstcontainer {
@@ -238,6 +239,7 @@ body, html {
 
 .c-contactus__sociallistitem {
   list-style-type: none;
+  padding-bottom: 1.5rem;
 }
 
 .c-form {
@@ -301,6 +303,24 @@ body, html {
   -webkit-text-decoration: underline 2px;
           text-decoration: underline 2px;
   color: #91b9ac;
+}
+
+.c-banner {
+  border: #8edef9 solid 5px;
+}
+
+.c-banner__image {
+  width: auto;
+  max-height: 60%;
+}
+
+.c-banner__textcontainer {
+  padding-top: 5rem;
+}
+
+.c-banner__text {
+  font-family: "Sansation", sans-serif;
+  font-size: 16px;
 }
 
 .form-control {
@@ -506,3 +526,8 @@ body, html {
 .u-tab2 {
   margin-left: 1.25rem;
 }
+
+.u-border {
+  border: #F4FFB9 solid 3px;
+}
+/*# sourceMappingURL=screen.css.map */
