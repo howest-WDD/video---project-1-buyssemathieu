@@ -106,16 +106,28 @@ body, html {
   border-bottom-right-radius: 1.5625rem;
 }
 
+@media only screen and (max-width: 768px) {
+  .c-header__slide2bg {
+    padding-top: 2rem;
+  }
+}
+
 .c-header__slide3bg {
   background-color: #ffd0ae;
   border-bottom-left-radius: 1.5625rem;
   border-bottom-right-radius: 1.5625rem;
 }
 
+@media only screen and (max-width: 768px) {
+  .c-header__slide3bg {
+    padding-top: 2rem;
+  }
+}
+
 .c-subtitle {
   font-family: "Caveat Brush", cursive;
   font-size: 36px;
-  padding: 3rem 0;
+  padding: 2rem 0;
 }
 
 .c-subtitle--2 {
@@ -195,7 +207,16 @@ body, html {
           transition-duration: 0.3s;
 }
 
+@media only screen and (max-width: 992px) {
+  .c-onzeaanbiedingen__cardcontainer--3 {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 .c-nieuwsbrief {
+  margin-top: 2rem;
   background-color: #fffafc;
   padding: 2rem;
 }
@@ -227,26 +248,21 @@ body, html {
   margin-top: 3rem;
 }
 
-.c-contactus__sociallink {
-  text-decoration: none;
-}
-
 .c-contactus__sociallistitem {
-  text-decoration: none;
-}
-
-.c-contactus__sociallink {
-  text-decoration: none;
-}
-
-.c-contactus__sociallink__sociallistitem {
-  text-decoration: none;
+  list-style-type: none;
 }
 
 .c-form {
   background-color: #91b9ac;
-  padding: 2rem;
+  padding: 1rem;
+  margin-top: 4rem;
   border-radius: 25px;
+}
+
+.c-form__title {
+  padding-top: 1rem;
+  font-family: "Keep Calm", sans-serif;
+  font-size: 16px;
 }
 
 .c-aboutus__textcontainer {
@@ -264,6 +280,13 @@ body, html {
   background-color: #424242;
   padding-top: 1rem;
   margin-top: 1rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .c-footer__logo {
+    text-align: center;
+    padding-bottom: 1rem;
+  }
 }
 
 .c-footer__list {
@@ -307,6 +330,7 @@ body, html {
   border-top-left-radius: 15px;
   border-bottom-left-radius: 15px;
   background-color: #FA9347;
+  color: #ffffff;
   -webkit-transition-property: background-color;
   transition-property: background-color;
   -webkit-transition-duration: 0.3s;
@@ -374,7 +398,7 @@ body, html {
 
 .accordion-button:not(.collapsed) {
   background-color: #90526d !important;
-  color: black;
+  color: #f0bbd2;
 }
 
 .btn-primary--2 {
@@ -422,6 +446,18 @@ body, html {
   padding: 3rem;
 }
 
+@media only screen and (max-width: 768px) {
+  .card {
+    margin-top: 2rem;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .card {
+    margin-top: 2rem;
+  }
+}
+
 .u-hotpink {
   background-color: hotpink;
 }
@@ -433,4 +469,3 @@ body, html {
 .u-tab2 {
   margin-left: 1.25rem;
 }
-/*# sourceMappingURL=screen.css.map */

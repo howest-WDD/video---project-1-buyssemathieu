@@ -131,28 +131,36 @@ body,html{
     border-bottom-left-radius: 1.5625rem;
     border-bottom-right-radius: 1.5625rem;
 
+
   }
   &__slide2bg {
     background-color: $colorpalegreenslide2;
     border-bottom-left-radius: 1.5625rem;
     border-bottom-right-radius: 1.5625rem;
+    @media only screen and (max-width:768px){
+      padding-top: 2rem;
+    }
 
   }
   &__slide3bg {
     background-color: $colorpaleorange;
     border-bottom-left-radius: 1.5625rem;
     border-bottom-right-radius: 1.5625rem;
+    @media only screen and (max-width:768px){
+      padding-top: 2rem;
+    }
 
   }
 }
 .c-subtitle {
   font-family: $font_heading;
   font-size: $heading_fontsize;
-  padding: 3rem 0;
+  padding: 2rem 0;
   &--2{
  
     background-color: $colorverypalepurple;
   }
+
 }
 .c-main {
   &__video {
@@ -213,9 +221,18 @@ body,html{
       transition-duration: 0.3s;
     }
   }
+  &__cardcontainer{
+
+    &--3{
+      @media only screen and (max-width:992px){
+        align-items: center;
+      }
+    }
+  }
 }
 
 .c-nieuwsbrief {
+  margin-top: 2rem;
   background-color: $colorverypalepurple;
   padding: 2rem;
   &__tekstcontainer {
@@ -241,28 +258,19 @@ body,html{
     margin-top: 3rem;
   }
 }
-.c-contactus{
-
-  &__sociallink{
-    text-decoration: none;
-  }
-  &__sociallistitem{
-    text-decoration: none;
-  }
-  &__sociallink{
-    text-decoration: none;
-    &__sociallistitem{
-      text-decoration: none;
-    }
-  }
+.c-contactus__sociallistitem{
+  list-style-type: none;
 }
 
 .c-form{
   background-color: $colorpalegreen;
-  padding: 2rem;
+  padding: 1rem;
+  margin-top: 4rem;
   border-radius: $roundedborder;
   &__title{
-
+    padding-top: 1rem;
+    font-family: $font_subheading;
+    font-size: $text_fontsize;
   }
 }
 .c-aboutus{
@@ -281,6 +289,12 @@ body,html{
   background-color: $colordarkgrey;
   padding-top: 1rem;
   margin-top: 1rem;
+  &__logo{
+    @media only screen and (max-width:768px){
+      text-align: center;
+      padding-bottom:1rem;
+    }
+  }
   &__list{
     justify-content: space-evenly;
   }
@@ -323,6 +337,7 @@ body,html{
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
     background-color: $colororange;
+    color: $colorwhite;
     transition-property: background-color;
     transition-duration: 0.3s;
     box-shadow: none;
@@ -351,11 +366,13 @@ body,html{
 .accordion-button{
   background-color: $colorpalepurple;
   
+  
 }
 .accordion-button::after{
   filter: invert(36%) sepia(12%) saturate(1596%) hue-rotate(282deg) brightness(0%) contrast(87%);
   color: $colorpalepurple;
 }
+
 .accordion-button:focus{
   color: $colorpalepurple;
   background-color: $colordarkpurple;
@@ -372,7 +389,7 @@ body,html{
 }
 .accordion-button:not(.collapsed) {
   background-color: $colordarkpurple !important;
-  color: black;
+  color: $colorpalepurple;
 }
 // SVG AANPASSEN ACCORDION
 .btn-primary{
@@ -414,6 +431,13 @@ body,html{
 }
 .card{
   padding: 3rem;
+  @media only screen and (max-width:768px){
+    margin-top: 2rem;
+  }
+  @media only screen and (max-width:992px){
+    margin-top: 2rem;
+    
+  }
 }
 //------------------------------------------------------//
 //UTILITIES//
