@@ -94,9 +94,6 @@ body,html{
     color: $colorlightgrey;
     font-family: $font_text;
     font-size: $text_fontsize;
-    @media only screen and (max-width: 768px) {
-      text-align: center;
-    }
 
     &:hover {
       color: $colorpalegreen;
@@ -116,20 +113,24 @@ body,html{
       text-decoration: underline $colorpalegreen 3px;
     }
   }
+  &__item{
+    @media only screen and (max-width: 768px) {
+      text-align: center;
+    }
+
+  }
 }
 .c-header {
   &__imgcontainer {
     display: flex;
     justify-content: center;
   }
-  &__slide1 {
-    justify-content: center;
-  }
-
   &__slide1bg {
     background-color: $colorpaleyellow;
     border-bottom-left-radius: 1.5625rem;
     border-bottom-right-radius: 1.5625rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 
 
   }
@@ -137,18 +138,16 @@ body,html{
     background-color: $colorpalegreenslide2;
     border-bottom-left-radius: 1.5625rem;
     border-bottom-right-radius: 1.5625rem;
-    @media only screen and (max-width:768px){
-      padding-top: 2rem;
-    }
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 
   }
   &__slide3bg {
     background-color: $colorpaleorange;
     border-bottom-left-radius: 1.5625rem;
     border-bottom-right-radius: 1.5625rem;
-    @media only screen and (max-width:768px){
-      padding-top: 2rem;
-    }
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 
   }
 }
@@ -296,7 +295,7 @@ body,html{
     }
   }
   &__list{
-    justify-content: space-evenly;
+    justify-content: space-around;
   }
   &__listitem{
     list-style-type: none;
@@ -337,13 +336,30 @@ body,html{
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
     background-color: $colororange;
-    color: $colorwhite;
     transition-property: background-color;
     transition-duration: 0.3s;
     box-shadow: none;
     border-color: transparent;
+
   }
+
+
   
+}
+.form-control--1{
+  &:hover{
+    background-color: $colororange;
+    transition-property: background-color;
+    box-shadow: none;
+    transition-duration: 0.3;
+  }
+  &:focus{
+    &::placeholder{
+      transition-duration: 0.3s;
+      color: $colorwhite;
+    }
+  }
+
 }
 .form-control--2{
   background-color: white;
@@ -399,6 +415,7 @@ body,html{
     background-color: $colordarkgreen;
     box-shadow: none;
     border: $colordarkgreen solid 2px;
+
     &:hover{
       background-color: transparent;
       border: $colordarkgreen solid 2px;
@@ -408,11 +425,15 @@ body,html{
       background-color: $colordarkgreen;
       box-shadow: none;
       border: $colordarkgreen solid 2px;
+      &:active{
+        box-shadow: none;
+      }
       &:hover{
         background-color: transparent;
         border: $colordarkgreen solid 2px;
       }
     }
+
   }
   &--3{
     background-color: $colorpaleorange;
@@ -420,12 +441,22 @@ body,html{
     box-shadow: none;
     border: none;
     margin-left: 0.5rem;
+    &:focus{
+      background-color: $colororange;
+      animation-duration: 2s;
+      box-shadow: none;
+      border: none;
+      &:active{
+        box-shadow: none;
 
+      } 
+    }
     &:hover{
       background-color: $colororange;
       box-shadow: none;
       border: none;
     }
+
   }
   
 }
