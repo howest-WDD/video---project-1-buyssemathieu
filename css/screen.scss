@@ -291,18 +291,31 @@ body,html{
 .c-footer{
   background-color: $colordarkgrey;
   padding-top: 1rem;
-  margin-top: 1rem;
+  margin-top: 3rem;
+  padding-right: 5rem;
   &__logo{
     @media only screen and (max-width:768px){
       text-align: center;
+      justify-content: center;
       padding-bottom:1rem;
+    }
+    @media only screen and (max-width:992px){
+      justify-content: center;
+      
     }
   }
   &__list{
     justify-content: space-around;
+    &--2{
+      justify-content: center;
+      
+    }
   }
   &__listitem{
     list-style-type: none;
+    &--2{
+      margin-right: 2rem;
+    }
     
   }
   &__link{
@@ -319,6 +332,25 @@ body,html{
       color: $colorpalegreen;
 
     }
+  }
+
+  &__dagencontainer{
+    padding-left: 5rem;
+    padding-top: 2rem;
+    @media only screen and (max-width:576px){
+      justify-content: center;
+    }
+  }
+  &__uren{
+    @media only screen and (max-width:576px) {
+      text-align: center;
+      justify-content: center;
+    }
+    color: $colorwhite;
+  }
+  &__urencontainer{
+    
+    padding-top: 2rem;
   }
 }
 .c-banner{
@@ -422,6 +454,7 @@ body,html{
 .accordion-button:not(.collapsed) {
   background-color: $colordarkpurple !important;
   color: $colorpalepurple;
+  
 }
 // SVG AANPASSEN ACCORDION
 .btn-primary{

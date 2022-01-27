@@ -269,13 +269,25 @@ body, html {
 .c-footer {
   background-color: #424242;
   padding-top: 1rem;
-  margin-top: 1rem;
+  margin-top: 3rem;
+  padding-right: 5rem;
 }
 
 @media only screen and (max-width: 768px) {
   .c-footer__logo {
     text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     padding-bottom: 1rem;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .c-footer__logo {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -284,8 +296,18 @@ body, html {
       justify-content: space-around;
 }
 
+.c-footer__list--2 {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .c-footer__listitem {
   list-style-type: none;
+}
+
+.c-footer__listitem--2 {
+  margin-right: 2rem;
 }
 
 .c-footer__link {
@@ -303,6 +325,36 @@ body, html {
   -webkit-text-decoration: underline 2px;
           text-decoration: underline 2px;
   color: #91b9ac;
+}
+
+.c-footer__dagencontainer {
+  padding-left: 5rem;
+  padding-top: 2rem;
+}
+
+@media only screen and (max-width: 576px) {
+  .c-footer__dagencontainer {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.c-footer__uren {
+  color: #ffffff;
+}
+
+@media only screen and (max-width: 576px) {
+  .c-footer__uren {
+    text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.c-footer__urencontainer {
+  padding-top: 2rem;
 }
 
 .c-banner {
@@ -530,4 +582,3 @@ body, html {
 .u-border {
   border: #F4FFB9 solid 3px;
 }
-/*# sourceMappingURL=screen.css.map */
