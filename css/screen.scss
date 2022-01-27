@@ -259,6 +259,16 @@ iframe{
     margin-top: 3rem;
   }
 }
+.c-contactus{
+  &__link{
+    text-decoration: none;
+    color: black;
+    &:hover{
+      color: $colordarkgreen;
+      transition-duration: 0.3s;
+    }
+  }
+}
 .c-contactus__sociallistitem{
   list-style-type: none;
   padding-bottom: 1.5rem;
@@ -297,6 +307,7 @@ iframe{
       text-align: center;
       justify-content: center;
       padding-bottom:1rem;
+      padding-left: 2rem;
     }
     @media only screen and (max-width:992px){
       display: flex;
@@ -361,11 +372,16 @@ iframe{
 }
 .c-banner{
   border: $colorhowestblue solid 5px;
-
+  margin: auto;
+  width: auto;
   &__image{
     width: auto;
-    max-height: 50%;
+    max-height: 50%
 
+  }
+  &__imagecontainer{
+    padding-top: 2rem;
+    
   }
   &__textcontainer{
     padding-top: 5rem;
@@ -518,6 +534,7 @@ iframe{
 }
 .card{
   padding: 3rem;
+  border-radius: $roundedborder;
   @media only screen and (max-width:768px){
     margin-top: 2rem;
   }

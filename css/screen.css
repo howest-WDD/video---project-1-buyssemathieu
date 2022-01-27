@@ -237,6 +237,17 @@ iframe {
   margin-top: 3rem;
 }
 
+.c-contactus__link {
+  text-decoration: none;
+  color: black;
+}
+
+.c-contactus__link:hover {
+  color: #2c443e;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+}
+
 .c-contactus__sociallistitem {
   list-style-type: none;
   padding-bottom: 1.5rem;
@@ -280,6 +291,7 @@ iframe {
         -ms-flex-pack: center;
             justify-content: center;
     padding-bottom: 1rem;
+    padding-left: 2rem;
   }
 }
 
@@ -374,11 +386,17 @@ iframe {
 
 .c-banner {
   border: #8edef9 solid 5px;
+  margin: auto;
+  width: auto;
 }
 
 .c-banner__image {
   width: auto;
   max-height: 50%;
+}
+
+.c-banner__imagecontainer {
+  padding-top: 2rem;
 }
 
 .c-banner__textcontainer {
@@ -568,6 +586,7 @@ iframe {
 
 .card {
   padding: 3rem;
+  border-radius: 25px;
 }
 
 @media only screen and (max-width: 768px) {
