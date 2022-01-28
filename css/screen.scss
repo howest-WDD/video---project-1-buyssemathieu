@@ -70,9 +70,7 @@ body,html{
   padding: 0; 
   height: 100%;
 }
-iframe{
-  border-radius: $roundedborder;
-}
+
 
 //------------------------------------------------------//
 //OBJECTS//
@@ -85,7 +83,7 @@ iframe{
 //------------------------------------------------------//
 .c-nav {
   background-color: $colordarkgrey;
-
+  padding: 2rem;
   &__brand {
     width: 60%;
     height: 60%;
@@ -93,7 +91,7 @@ iframe{
   }
 
   &__link {
-    margin-right: 1rem;
+    margin-right: 2rem;
     align-items: flex-end;
     text-decoration: none;
     color: $colorlightgrey;
@@ -106,7 +104,7 @@ iframe{
     }   
 
     &--active {
-      margin-right: 1rem;
+      margin-right: 2rem;
       @media only screen and (max-width: 768px) {
         text-align: center;
       }
@@ -132,8 +130,6 @@ iframe{
   }
   &__slide1bg {
     background-color: $colorpaleyellow;
-    border-bottom-left-radius: 1.5625rem;
-    border-bottom-right-radius: 1.5625rem;
     padding-top: 2rem;
     padding-bottom: 2rem;
 
@@ -141,16 +137,12 @@ iframe{
   }
   &__slide2bg {
     background-color: $colorpalegreenslide2;
-    border-bottom-left-radius: 1.5625rem;
-    border-bottom-right-radius: 1.5625rem;
     padding-top: 2rem;
     padding-bottom: 2rem;
 
   }
   &__slide3bg {
     background-color: $colorpaleorange;
-    border-bottom-left-radius: 1.5625rem;
-    border-bottom-right-radius: 1.5625rem;
     padding-top: 2rem;
     padding-bottom: 2rem;
 
@@ -159,7 +151,8 @@ iframe{
 .c-subtitle {
   font-family: $font_heading;
   font-size: $heading_fontsize;
-  padding: 2rem 0;
+  padding-top: 4rem;
+  padding-bottom: 2rem;
   &--2{
  
     background-color: $colorverypalepurple;
@@ -198,7 +191,7 @@ iframe{
     &:hover {
       background-color: $colordarkgreen;
       transition-duration: 0.3s;
-    }
+    } 
   }
   &__buttonimage {
     width: 50%;
@@ -209,15 +202,15 @@ iframe{
   }
   &__promotiebutton {
     text-decoration: none;
-    background-color: $colorpalepurple;
+    background-color: $colorpalegreenslide2;
     padding: 0.8rem 3rem;
-    color: $colordarkpurple;
+    color: $colordarkgreen;
     font-family: $font_subheading;
     font-size: $button_fontsize;
     border-radius: 15px;
     &:hover {
-      background-color: $colordarkpurple;
-      color: $colorpalepurple;
+      background-color: $colordarkgreen;
+      color: $colorwhite;
       transition-duration: 0.3s;
     }
   }
@@ -234,8 +227,8 @@ iframe{
 .c-nieuwsbrief {
   margin-top: 2rem;
   background-color: $colorverypalepurple;
-  padding: 2rem;
-  border-radius: $roundedborder;
+  padding: 1rem;
+  padding-bottom: 3rem;
   &__tekstcontainer {
     margin-left: 0 auto;
     margin-right: 0 auto;
@@ -277,11 +270,11 @@ iframe{
 .c-form{
   background-color: $colorpalegreen;
   padding: 1rem;
+  padding-bottom: 3rem;
   margin-top: 4rem;
-  border-radius: $roundedborder;
   &__title{
-    padding-top: 1rem;
     font-family: $font_subheading;
+    padding-top: 1rem;
     font-size: $text_fontsize;
   }
 }
@@ -292,27 +285,29 @@ iframe{
     border-radius: $roundedborder;
   }
   &__title{
-    font-family: $font_heading;
+    font-family: $font_subheading;
     font-size: $heading_fontsize;
   }
 
 }
 .c-footer{
   background-color: $colordarkgrey;
-  padding-top: 1rem;
+  padding-top: 3rem;
   margin-top: 3rem;
   padding-right: 5rem;
   &__logo{
     @media only screen and (max-width:768px){
+      display: flex;  
       text-align: center;
       justify-content: center;
-      padding-bottom:1rem;
-      padding-left: 2rem;
+      align-items: center;
+      margin-bottom: 2rem;
     }
     @media only screen and (max-width:992px){
       display: flex;
       justify-content: center;
       align-items: center;
+      margin-bottom: 2rem;
     }
   }
   &__list{
@@ -357,6 +352,7 @@ iframe{
     @media only screen and (max-width:576px) {
       text-align: center;
       justify-content: center;
+      align-items: center;
     }
     color: $colorwhite;
   }
@@ -398,14 +394,10 @@ iframe{
 //BOOTSTRAP//
 //------------------------------------------------------//
 .form-control{
-  border-top-left-radius: 15px;
-  border-bottom-left-radius: 15px;
   background-color: $colorpaleorange;
   display: flex;
   border: none;
   &:focus{
-    border-top-left-radius: 15px;
-    border-bottom-left-radius: 15px;
     background-color: $colororange;
     transition-property: background-color;
     transition-duration: 0.3s;
@@ -480,11 +472,27 @@ iframe{
   color: $colorpalepurple;
   
 }
+.accordion-item:first-of-type .accordion-button{
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.accordion-item:first-of-type{
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.accordion-item:last-of-type .accordion-button.collapsed{
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.accordion-item:last-of-type{
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
 // SVG AANPASSEN ACCORDION
 .btn-primary{
 
   &--2{
-    margin-top: 1.5rem;
+    margin-top: 2rem;
     background-color: $colordarkgreen;
     box-shadow: none;
     border: $colordarkgreen solid 2px;
